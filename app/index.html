@@ -15,11 +15,11 @@
     </head>
     <body>
         <nav class="navbar">           <!-- navigation bar -->
-            <a ui-sref="index.html" class="logo">
+            <a href="/" ui-sref='landing' class="logo ng-binding">
                 <img src="assets/images/bloc_jams_logo.png" alt="bloc jams logo">
             </a>
             <div class="links-container">
-                <a ui-sref="collection.html" class="navbar-link">collection</a>
+                <a href="/collection" ui-sref="collection" class="navbar-link ng-binding">collection</a>
             </div>
         </nav>
 
@@ -28,7 +28,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
         <script src="/scripts/app.js"></script>
-        <script src="/scripts/fixtures.js"></script>
+        <script src="/scripts/services/Fixtures.js"></script>
         <script src="/scripts/controllers/LandingCtrl.js"></script>
         <script src="/scripts/controllers/CollectionCtrl.js"></script>
         <script src="/scripts/controllers/AlbumCtrl.js"></script>
